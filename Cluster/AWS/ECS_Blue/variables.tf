@@ -28,7 +28,7 @@ variable "Blue_Autoscaling" {
   default = {
     desired_count = 4
     min_capacity  = 4
-    max_capacity  = 6
+    max_capacity  = 8
   }
   validation {
     condition     = (var.Blue_Autoscaling.desired_count >= var.Blue_Autoscaling.min_capacity) && var.Blue_Autoscaling.desired_count >= 1
